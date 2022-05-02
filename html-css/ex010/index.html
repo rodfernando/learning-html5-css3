@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando links externos</title>
+</head>
+<body>
+    <h1>Usando link externo</h1>
+    <p>Você pode acessar o meu <a href="https://github.com/rodfernando" target="_blank" rel="external">repositório público no GitHub.</a>.</p> <!--Tag a de âncora com a referência de hipertexto (pra onde o site vai). É interessante adicionar o parâmetro target blank para que ao apertar no link, meu site não seja sobreposto. O rel é para indicar que é um link externo. Com isso é aberto outra janela.-->
+    <h1>Usando link interno</h1>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">segunda página</a></p>
+    <!--Link interno não precisa adicionar a url. Basta que a página esteja no mesmo arquivo que o index.-->
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias.</a></p>
+    
+    <h1>Links para Download</h1>
+    <ul type="square">
+        <li><a href="livro/01 - História da Internet.pdf" target="application/pdf" download="01 - História da Internet.pdf">Baixar o livro em pdf</a></li>
+        <li><a href="livro/01 - História da Internet.zip" target="application/zip" download="01 - História da Internet.zip">Livro compactado ZIP</a></li>
+        <!--href: path do arquivo; type:application/; download: nome do arquivo-->
+        <!--Para descobrir o target da aplicação, basta ver no site https://www.iana.org/assignments/media-types/media-types.xhtml-->   
+    </ul>
+</body>
+</html>
