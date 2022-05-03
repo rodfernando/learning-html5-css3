@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do navegador.</p>
+    <picture> <!--Permite que sejam criadas várias fontes.-->
+        
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+        <!--Ele carrega a imagem grande. Porém, se a tela for menor que 1050px, ele vai carregar a imagem média. Lembrar de colocar MAX-width para fotos grandes ou MIN para pequenas. 50 é a compensação da largura da barra de rolagem. Não esquecer também de adicionar o tipo de foto -> type="image/png". A ordem do MIN pro MAX deve ser respeitada.-->
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios no HTML 5.</p>
+    <!--Áudio retirado do youtube studio -> bibliotecas de áudio. Alguns browsers não executam algumas features, como autoplay. A maioria dos arquivos que tocam são MP3, WAV e OGG (arquivo open source)-->
+    <audio preload="auto" controls loop>
+        <source src="midias/this-little-light-of-mine.mp3" type="audio/mpeg">
+        <source src="midias/this-little-light-of-mine.ogg" type="audio/ogg">
+        <source src="midias/this-little-light-of-mine.wav" type="audio/wav"> <!--Evitar WAV: muito pesado-->
+        <!--Do mesmo jeito que o tamanho da foto, o arquivo de áudio rodará o primeiro tipo de arquivo na lista (MP3 - MPeg). Caso tenha algum problema, ele roda o que vem a seguir (OGG) e por ai vai.-->
+        <p>Infelizmente seu navegador não conseguiu reproduzir o áudio. <a href="midias/this-little-light-of-mine.mp3">Clique aqui para baixar o arquivo mp3 .</a></p>
+    </audio>
+    
+</body>
+</html>
