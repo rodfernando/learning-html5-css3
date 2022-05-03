@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML 5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video width="560" poster="imagens/piscina-capa.png" controls loop> 
+        <source src="midia/piscina.mp4" type="video/mp4">
+        <source src="midia/piscina.m4v" type="video/mp4">
+        <source src="midia/piscina.webm" type="video/webm">
+        <source src="midia/piscina.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video> <!--O vídeo foi configurado para 500px. Por isso não adianta colocar vídeos com qualidade alta demais, pois no fim será necessário diminuir usando o width com o arquivo ocupando o mesmo tamanho.-->
+    <!--Colocar os vídeos na ordem do menor tamanho (mais leve) para o maior.-->
+    <hr>
+    <h1>Inserindo vídeos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6wDhJFue_Us" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!--No youtube, digitar animation reel, selecionar o vídeo desejado e apertar em compartilhar e em seguida incorporar-->
+    <hr>
+    <h1>Inserindo Vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/51821954?h=9027ddbcdd" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/51821954">Animation Demo Reel</a> from <a href="https://vimeo.com/user14199233">Virginie Michel d&#039;Annoville</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</body>
+</html>

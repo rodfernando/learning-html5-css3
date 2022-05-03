@@ -1,0 +1,3 @@
+Análise: digamos que 1000 pessoas acessam o site e clicam no vídeo. Na forma atual de hospedagem, haverá um consumo de 1000 pessoas * 4.3 MB ~= 4,3 GB. Quando hospedamos o site, haverá um consumo de 4.3 GB, na melhor das hipóteses. Isso irá pesar no bolso do cliente na hora de pagar por uma hospedagem equivalente a esse consumo, além da possibilidade de haver problemas com tráfego. Resumo: vídeos hospedados no site usando a tag vídeo irá consumir muito tráfego de dados.
+
+Inserindo site através do youtube
