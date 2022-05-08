@@ -1,0 +1,13 @@
+- Todo elemento num site é um box;
+- height x width = border;
+- O espaço interno do border é chamado de padding (acochoamento);
+- O espaço externo é chamado de margin;
+- Colado com o padding e entre o margin está o Outline (contorno/traçado);
+- O box level é sempre 100% do viewport e isolado (quebra para próxima linha);
+- box level != inline level (não quebra linha)
+
+- box level = <div>
+- inline level = <span>
+
+- user agent = navegador
+- display: block = box level

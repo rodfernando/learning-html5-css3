@@ -1,0 +1,17 @@
+@charset "UTF-8"; /*Tudo que tiver um @ é uma regra. Esta última serve para identificar alguns caracteres no CSS*/
+
+body{
+    background-color: rgb(87, 150, 129);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+h1{
+    color: rgb(99, 38, 38);
+    background-color: rgb(49, 109, 89);
+}
+h2{
+    color: rgb(22, 95, 22);
+}
+p{
+    text-align: justify;
+}

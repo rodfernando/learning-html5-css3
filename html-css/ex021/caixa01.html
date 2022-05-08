@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{ /*Box-level*/
+
+            /*Se quiser transformar um box-level em inline:
+            display = inline;*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /*SHORTHAND*/
+            border: 10px double brown;
+
+            /*O padding tem 4 medidas*/
+            padding: 10px 10px 10px 10px;
+            /*Se as 4 medições forem iguais, bastar colocar uma única vez. Ex: padding: 10px. Se colocarmos 2 valores, ai será o top e bottom*/
+
+            margin: auto; /*Serve para centralizar a caixa. Se for texto, text-align = center*/
+            margin: 20px auto 40px auto;
+
+            outline: 5px dashed blueviolet;
+        }
+
+        a { /*Inline level*/
+            border: 5px groove red;
+            
+            padding: 5px 5px 5px 5px;
+        }
+    </style>
+    <title>Modelo de Caixas</title>
+</head>
+<body>
+    <h1>Exemplo de Caixa Box Level</h1>
+    <!-- No parágrafo, o inline level aparece como auto-auto, pq ele não quebra a linha-->
+    <p>Parágrafos também são exemplos de Box-level, mas os <a href="#">links são exemplos de caixas inline level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
