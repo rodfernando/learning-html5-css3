@@ -35,6 +35,10 @@ body {
     font-family: var(--fonte-padrao);
 }
 
+a.external::after { /*Todo link que for externo terá um emoji de link após o seu conteúdo. Com isso, é só ir no link no html5 e adicionar a class*/
+    content: '\00A0\1F517';
+}
+
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 150px;
@@ -47,6 +51,7 @@ header > h1 {
     font-family: var(--fonte-destaque);
     margin-bottom: 20px;
     font-size: 3em;
+    font-weight: normal;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.61);    
 }
 
@@ -59,6 +64,7 @@ header > p {
     padding-right: 10px;
     margin: auto;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.61); 
+    margin-bottom: 20px;    
 }
 
 nav {
@@ -69,7 +75,7 @@ nav {
 
 nav > a {
     padding: 10px;
-    color: white;
+    color: var(--cor1);
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
@@ -107,9 +113,27 @@ main img.pequena {
     margin: auto;
 }
 
+div.video { /*Tudo que é div da classe video*/
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 58%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+}
+
 main h1 {
     color: var(--cor5);
     font-family: var(--font-android);
+    font-weight: normal;
+    font-size: 1.8em;
 }
 
 main h2 {
@@ -117,6 +141,7 @@ main h2 {
     color: var(--cor4);
     font-size: 1.3em;
     background-image: linear-gradient(to right, var(--cor1), transparent);
+    font-weight: normal;
     text-indent: 8px;
 }
 
@@ -147,7 +172,42 @@ main a:hover {
     color: var(--cor4);
 }
 
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.322);
+}
+
+aside > h3 {
+    color: white;
+    background-color: var(--cor4);
+    padding: 10px;
+    margin: -10px -10px 0px -10px; /*margem para encaixar um bloco no outro*/
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0'; /*\ + nº do emoji / \00A0 -> espaço de quebra*/
+    list-style-position: inside; /*colocar as bolinhas pro lado de dentro*/
+    columns: 2;
+}
+
 footer {
     background-color: var(--cor5);
     color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer > p > a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
 }

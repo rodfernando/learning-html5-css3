@@ -9,3 +9,5 @@ main img {
     /*imagem responsiva*/
     width: 100%;
 }
+
+Formas de centralizar um vídeo 
