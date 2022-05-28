@@ -11,3 +11,5 @@
 
 - user agent = navegador
 - display: block = box level
+
+- atalho: Ctrl + ; -> entra em modo de comentário no css
