@@ -1,0 +1,11 @@
+main {
+    /*box responsivo*/
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+main img {
+    /*imagem responsiva*/
+    width: 100%;
+}
